@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Simple Admin Dashboard</title>
+    <link rel="stylesheet" href="res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="Style.php"/>
+    
+    
+    
+</head>
+<body>
+ <div class="main">
+   <a href="https://www.facebook.com/saddamst.st.10">visit My Facebook</a><br />
+   <a href="https://www.google.com/">Google Chrome</a>
+ </div>
+  
+  
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        new Chartist.Line('#traffic-chart', {
+            labels: ['January', 'Februrary', 'March', 'April', 'May', 'June'],
+            series: [
+                [23000, 25000, 19000, 34000, 56000, 64000]
+            ]
+            }, {
+            low: 0,
+            showArea: true
+        });
+    </script>
+</body>
+</html>
